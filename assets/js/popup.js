@@ -128,8 +128,7 @@ var d0pop = (function(){
 				// feature1   : document.getElementById('feature1'),
 				actionPopUp: document.getElementById('actionPopUp'),
 				laterBtn   : document.getElementById('laterBtn'),
-				homeBtn    : document.getElementById('homeBtn'),
-				skipBtn    : document.getElementById('skipBtn'),
+				topBar     : document.getElementById('topBar'),
 				nextBtn    : document.getElementById('nextBtn'),
 				backBtn    : document.getElementById('backBtn'),
 				popUpCard  : document.getElementById('popUpCard')
@@ -153,6 +152,8 @@ var d0pop = (function(){
 					state.current++;
 					api.showFeature();
 					api.toggleHomeScreen('hide');
+					api.show(cache.topBar);
+
 						
 				};
 
@@ -192,8 +193,7 @@ var d0pop = (function(){
 
 		showFeature:function(){
 			var feature = api.getCurrentFeature();
-			feature.style.display="block";
-			feature.classList.add('showElemCls');
+			api.show(feature);
 						
 			window.setTimeout(function(){
 				feature.classList.add(feature.getAttribute('id')+'Cls');
@@ -202,20 +202,14 @@ var d0pop = (function(){
 
 		hideScreen:function(){
 			var feature = api.getCurrentFeature();
-			feature.style.display="none";
-			feature.classList.add('hideElem');
-
+			api.hide(feature);
 		},
 
 		toggleHomeScreen:function(action){
-			if(action=='show'){
-				popUpCard.style.display	= "block";
-				popUpCard.classList.add('showElemCls');
-			}
-			else if(action=='hide'){
-				popUpCard.style.display	= "none";
-				popUpCard.classList.add('hidelem');
-			}
+			if(action=='show')
+				api.show(popUpCard);
+			else 
+				api.hide(popUpCard);
 		},
 
 
@@ -224,6 +218,16 @@ var d0pop = (function(){
 			var startFeatureName = feature.getAttribute('data-anim-name');
 			return document.getElementById(startFeatureName);
 
+		},
+		show:function(elem){
+			elem.style.display	= "block";
+			elem.classList.add('showElemCls');
+	
+
+		},
+		hide:function(elem){
+			elem.style.display	= "none";
+			elem.classList.add('hideElemCls');
 		}
 
 

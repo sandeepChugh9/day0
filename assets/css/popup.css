@@ -19,6 +19,8 @@ body { height: 100% }
 
 @media only screen and (orientation : portrait){
 #popUpCard[data-fullscreen="true"] { height: 100% }
+
+
 }
 
 .alignLeft {
@@ -803,7 +805,7 @@ font-weight: 500;
 margin-top: 10%;
 text-align: center;
 opacity: 0;
-  -webkit-animation-delay: 5.2s; /* Chrome, Safari, Opera */
+  -webkit-animation-delay: 4.8s; /* Chrome, Safari, Opera */
   
 }
 
@@ -1034,20 +1036,22 @@ border-radius:0 !important;
 
 }
 
+
+
 .scrTitle{
 font-size: 28px;
-margin-top: 70px;
+margin-top: 50px;
 z-index: 20;
 font-weight: 400;
 display: block;
 }
 
 .scrSubTitle{
-font-size: 17px;
-margin-top: 10px;
-opacity: 0.72;
+font-size: 18px;
+margin-top: 15px;
+opacity: 0.8;
 z-index: 20;
-font-weight: 400;
+font-weight: 300;
 }
 
 
@@ -1134,7 +1138,7 @@ border-radius: 5px;
 
  
   100% {
-    top:144px;
+    top:174px;
     left: 12px;
   }
 }
@@ -1142,12 +1146,12 @@ border-radius: 5px;
 
 @-webkit-keyframes anim2User1-chat {
   0% {
-      top:144px;
+      top:174px;
   }
 
  
   100% {
-    top:340px;
+    top:370px;
   }
 }
 
@@ -1161,7 +1165,7 @@ border-radius: 5px;
 
  
   100% {
-    top:344px;
+    top:374px;
     right: 12px;
   }
 }
@@ -1170,12 +1174,12 @@ border-radius: 5px;
 
 @-webkit-keyframes anim2User2-chat {
   0% {
-      top:344px;
+      top:374px;
      }
 
  
   100% {
-    top:260px;
+    top:290px;
   }
 }
 
@@ -1192,7 +1196,7 @@ border-radius: 5px;
 
  
   100% {
-    top:204px;
+    top:254px;
     right: 66px;
   }
 }
@@ -1201,12 +1205,12 @@ border-radius: 5px;
 
 @-webkit-keyframes anim2Sticker1-chat {
   0% {
-      top:204px;
+      top:254px;
   }
 
  
   100% {
-    top:120px;
+    top:150px;
   }
 
   }
@@ -1219,7 +1223,7 @@ border-radius: 5px;
 
  
   100% {
-    left:60px;
+    left:65px;
   }
 
 
@@ -1228,11 +1232,13 @@ border-radius: 5px;
 @-webkit-keyframes anim2Mess1-chat {
   0% {
       top:140px;
+      opacity: 1;
   }
 
  
   100% {
     top: 50px;
+    opacity: 
   }
 
   }
@@ -1245,7 +1251,7 @@ border-radius: 5px;
 
  
   100% {
-      left: 60px;   
+      left: 65px;   
     }
 
   }
@@ -1255,7 +1261,7 @@ border-radius: 5px;
 
 
 .chatAnimCls #iconUser1{
-   -webkit-animation: showElem 0.2s 0.4s,animUser1-chat 0.6s 0.7s, anim2User1-chat 0.6s 2s;  /* Chrome, Safari, Opera */
+   -webkit-animation: showElem 0.2s 0.8s,animUser1-chat 0.6s 0.7s, anim2User1-chat 0.6s 2s;  /* Chrome, Safari, Opera */
   -webkit-animation-fill-mode: forwards;
   display:block !important;
   top:200px;
@@ -1275,7 +1281,7 @@ display:none;
 
 
 .chatAnimCls #iconUser2{
-   -webkit-animation: showElem 0.2s 0.4s,animUser2-chat 0.6s 0.7s, anim2User2-chat 0.6s 2s; /* Chrome, Safari, Opera */
+   -webkit-animation: showElem 0.2s 0.8s,animUser2-chat 0.6s 0.7s, anim2User2-chat 0.6s 2s; /* Chrome, Safari, Opera */
   -webkit-animation-fill-mode: forwards;
 display:block !important;
 top:410px;
@@ -1296,46 +1302,34 @@ display:none;
 
 .chatAnimCls #iconMess1{
   
-   -webkit-animation: showElem 0.2s 0.4s,animMess1-chat 0.6s 0.7s,anim2Mess1-chat 0.6s 2s; /* Chrome, Safari, Opera */
+   -webkit-animation: showElem 0.2s 0.7s,animMess1-chat 0.6s 0.7s,anim2Mess1-chat 0.6s 2s; /* Chrome, Safari, Opera */
     -webkit-animation-fill-mode: forwards;
  display:block !important;
-     top:140px;
+     top:173px;
      left:-219px;
      opacity:0;
 }
 
 
-#iconMess1{
-  height: 35px;
-width: 161px;
- 
+#iconMess1,#iconMess2{ 
 display:none;
-      
-
-
+width: 100%;
 }
 
 .chatAnimCls #iconMess2{
   
-  -webkit-animation: showElem 0.2s 0.4s,animMess2-chat 0.6s 2s; /* Chrome, Safari, Opera */
+  -webkit-animation: showElem 0.2s 0.7s,animMess2-chat 0.6s 2s; /* Chrome, Safari, Opera */
  -webkit-animation-fill-mode: forwards;
  display:block !important;
-   top: 337px;
+   top: 370px;
     left: -225px;
     opacity:0;
 
 }
 
 
-#iconMess2{
-  width: 226px;
-  height: 50px;
-  display:none;
-
-}
-
 .chatAnimCls #iconSticker{
- -webkit-animation: showElem 0.2s 0.4s,animSticker1-chat 0.6s 0.7s,anim2Sticker1-chat 0.6s 2s; /* Chrome, Safari, Opera */
+ -webkit-animation: showElem 0.2s 0.8s,animSticker1-chat 0.6s 0.7s,anim2Sticker1-chat 0.6s 2s; /* Chrome, Safari, Opera */
  -webkit-animation-fill-mode: forwards;
   top:224px;
   right: -150px;
@@ -1372,21 +1366,21 @@ position: absolute;
   float: right;
 }
 
-.topBar{
+#topBar{
 top: 0%;
 width: 100%;
-
 position: absolute;
 z-index: 2000;
 font-weight: 600;
 color: black;
+display: none;
+opacity: 0;
 }
 
 
 .bottomBar{
 bottom: 2%;
 width: 100%;
-
 position: absolute;
 z-index: 2000;
 font-weight: 600;
@@ -1394,8 +1388,35 @@ color: red;
 }
 
 
-/* Coupons CSS */
+/*  MESSAGE THREAD CSS*/ 
+.message{
+    height: 40px;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    border-radius: 6px;
+    width: auto;
+    padding: 10px;
+    text-align: left;
+}
 
+.timeStamp{
+  color:grey;
+  font-size: 12px;
+}
 
+.messageTxt{
+color:Black;
+}
 
+.arrow{
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 10px solid white;
+    left: -8px;
+    top: 14px
 
+}
+
+/*   MESSAGE THREAD CSS ENDS*/
