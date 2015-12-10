@@ -826,7 +826,7 @@ opacity: 0;
 
 .wcAnimate
 {
- -webkit-animation: fadeInPulse 0.2s; /* Chrome, Safari, Opera */
+ -webkit-animation: fadeInPulse 0.1s; /* Chrome, Safari, Opera */
  -webkit-animation-fill-mode: forwards;
 }
 
@@ -1248,7 +1248,6 @@ border-radius: 5px;
   0% {
       left: -225px;
   }
-
  
   100% {
       left: 65px;   
@@ -1272,10 +1271,8 @@ border-radius: 5px;
 
 #iconUser1{
   height: 40px;
-width: 40px;
-display:none;
- 
-
+  width: 40px;
+  display:none;
 
 }
 
@@ -1378,14 +1375,22 @@ opacity: 0;
 }
 
 
-.bottomBar{
+#bottomBar{
 bottom: 2%;
 width: 100%;
 position: absolute;
 z-index: 2000;
 font-weight: 600;
 color: red;
+display: none;
 }
+
+#bottomBar div{
+  opacity: 0;
+  display: none;
+}
+
+
 
 
 /*  MESSAGE THREAD CSS*/ 

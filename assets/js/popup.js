@@ -129,6 +129,8 @@ var d0pop = (function(){
 				actionPopUp: document.getElementById('actionPopUp'),
 				laterBtn   : document.getElementById('laterBtn'),
 				topBar     : document.getElementById('topBar'),
+				homeBtn    : document.getElementById('homeBtn'),
+				skipBtn    : document.getElementById('skipBtn'),
 				nextBtn    : document.getElementById('nextBtn'),
 				backBtn    : document.getElementById('backBtn'),
 				popUpCard  : document.getElementById('popUpCard')
@@ -151,9 +153,9 @@ var d0pop = (function(){
 					cache.actionPopUp.style.zIndex = "0";
 					state.current++;
 					api.showFeature();
-					api.toggleHomeScreen('hide');
+					
 					api.show(cache.topBar);
-
+					api.toggleHomeScreen('hide');
 						
 				};
 
@@ -163,9 +165,18 @@ var d0pop = (function(){
 
 				cache.nextBtn.onclick = function(){
 
-					api.hideScreen();
-					state.current++;
-					api.showFeature();
+					if(state.current<6){
+						api.hideScreen();
+						state.current++;
+						api.showFeature();
+					}
+					else{
+						api.toggleHomeScreen('show');
+						api.hideScreen();
+						api.hide(cache.laterBtn);
+						cache.exploreBtn.innerHTML ="Let's Begin";
+
+					}
 
 				}
 
@@ -221,12 +232,14 @@ var d0pop = (function(){
 		},
 		show:function(elem){
 			elem.style.display	= "block";
+			elem.classList.remove('hideElemCls');
 			elem.classList.add('showElemCls');
 	
 
 		},
 		hide:function(elem){
 			elem.style.display	= "none";
+			elem.classList.remove('showElemCls');
 			elem.classList.add('hideElemCls');
 		}
 
