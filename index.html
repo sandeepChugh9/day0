@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,user-scalable=0" />
+            <title>Popup</title>
+            <link rel="stylesheet" type="text/css" href="assets/css/font.css">
+            <link rel="stylesheet" type="text/css" href="assets/css/popup.css">
+    </head>
+    <body>
+        
+        <div class="card noselect relative" id="popUpCard" style="">
+            <div class="row" id="borderRowMain">
+                <div class="popup">
+                   
+                    
+                    <div class="title alignCenter" style="color:#000000; font-weight: 300;margin-top: 30px; font-size: 32px;">
+                        Did you know?
+                    </div>  
+                    <div class="alignCenter subtitle" style="font-weight: 300;color:#000000;margin-top: 10px">
+                           Hike is lot more than fun than simple messaging
+                    </div>     
+                </div>
+            </div>
+
+            <!-- Welcome Screen -->
+
+            <div id="welcomeScreen" style="display:none">
+                <div> Start  </div>
+                <div>  Hi   Deepak </div>
+                <div>  <img src="assets/images/a.4.png"/> </div>
+            </div>
+
+            <!-- Screen 1 -->
+
+            <div id="parent">
+                <div class="lines">
+                      <div id="feature1" data-anim-name = "chatAnim" data-index="1" class="icons"> <img src="assets/images/1.png"/>
+                      </div>
+                      <div id="feature2" data-anim-name = "newsAnim"  data-index="2" class="icons"> <img src="assets/images/2.png"/>
+                      </div>
+                      <div id="feature3" data-anim-name = "couponsAnim"  data-index="3" class="icons"> <img src="assets/images/3.png"/>
+                      </div>
+                </div>
+                <div class="lines">
+                     <div id="feature4" data-anim-name = "filtersAnim"  data-index="4" class="icons"> <img src="assets/images/4.png"/>
+                     </div>
+                     <div id="feature5" data-anim-name = "hkDirectAnim"  data-index="5" class="icons"> <img src="assets/images/5.png"/>
+                     </div>
+                     <div id="feature6" data-anim-name = "hiddenModeAnim"  data-index="6" class="icons"> <img src="assets/images/6.png"/>
+                     </div>
+                </div>
+            </div>
+
+            <!-- BUTTONS ACTIONS  Screen 1-->
+
+            <div class="row tappingEffect" id="actionPopUp">   
+                <div id="exploreBtn" style="text-transform: uppercase;font-weight: 400;" class="alignCenter action--single">Take the full tour</div>
+            </div>
+            <div ID="laterBtn">
+                   LATER 
+            </div>    
+        </div>
+
+        <!-- Containers for animations -->
+
+            <div id="scrContainer">
+                
+                     <div class="topBar"> 
+                           <div id="homeBtn" class="lFloat">  Home </div>
+                           <div id="skipBtn" class="rFloat">  Skip </div>
+                    </div>
+
+            <div id="chatAnim">
+                 <div id="chatTitle" class="scrTitle"> Chat with stickers</div>
+                <div id="chatSubTitle" class="scrSubTitle"> It's more fun and your friends </br> will love to recieve them</div>
+                <div id="chatThread"> 
+                       
+                       <div id="iconUser1">   <img src="assets/images/a.2.png">     </div>
+                       <div id="iconUser2">   <img src="assets/images/a.5.png">     </div>
+                       <div id="iconMess1">   <img src="assets/images/a.3.png">     </div>
+                       <div id="iconSticker"> <img src="assets/images/a.4.png">    </div>
+                       <div id="iconMess2">   <img src="assets/images/a.7.png">    </div> 
+                </div>
+            </div>
+
+
+            <div id="newsAnim">
+                <div id="newsTitle" class="scrTitle"> News</div>
+                <div id="newsSubTitle" class="scrSubTitle"> Select your favourite categories</div>
+                <div id="newsThread"> 
+                </div>
+            </div>
+
+            <div id="couponsAnim">
+                <div id="couponsTitle" class="scrTitle"> Coupons</div>
+                <div id="couponsSubTitle"  class="scrSubTitle"> Recieve the best offers and deals </br> from your favourite brands</div>
+                <div id="couponsThread">  
+                <p> Hemank Sabharwal </p>
+
+                </div>
+            </div>
+
+
+             <div id="filtersAnim">
+                <div id="filtersTitle" class="scrTitle"> Filters & Doodles</div>
+                <div id="filtersSubTitle"  class="scrSubTitle"> Stay Creative</div>
+                <div id="filtersThread"> 
+                </div>
+            </div>
+
+          
+
+            <div id="hkDirectAnim">
+                <div id="hkDirectTitle" class="scrTitle"> Hike Direct</div>
+                <div id="hkDirectSubTitle"  class="scrSubTitle"> Share files without internet</div>
+                <div id="hkDirectSubTitle"  class="scrSubTitle"> Within 100 metre range</div>
+                <div id="hkDirectThread"> 
+                </div>
+            </div>
+
+
+            <div id="hiddenModeAnim">
+                <div id="hiddenModeTitle" class="scrTitle"> Hide your private chats</div>
+                <div id="hiddenModeTitle"  class="scrSubTitle"> Using a password</div>
+                <div id="hiddenModeThread"> 
+                
+                </div>
+            </div>
+
+           
+            <div class="bottomBar"> 
+                <div id="backBtn" class="lFloat"> Back </div>
+                <div id="nextBtn" class="rFloat"> Next</div>
+            </div>
+            
+
+
+        </div>
+        
+        
+    </body>
+
+    <script type="text/javascript" src="assets/js/platform.js"></script>
+        <script type="text/javascript" src="assets/js/popup.js"></script>
+        
+</html>

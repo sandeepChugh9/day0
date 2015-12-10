@@ -1,0 +1,87 @@
+{
+	"t": "productpopup",
+	"d": {
+		"md": {
+			"cardObj": {
+				"appPackage": "https://s3-ap-southeast-1.amazonaws.com/platform-qa-segments/micro-apps/popup/join007.zip",
+				"appVersion": "0.3",
+				"appName": "join007",
+				"ld": {
+					"image": {
+						"style": ";width: 100px;height: 100px;margin-top: 10px;"
+					},
+					"subtitle": {
+						"name": "Hike is lot more than fun than simple messaging",
+						"style": "font-weight: 400;margin-top: 10px;opacity:0.8;max-width:80%;"
+					},
+					"isFullScreen": true,
+					"title": {
+						"name": "Did you know?",
+						"style": "font-weight: 400;font-size: 28px;margin-top: 25px;"
+					},
+
+					"userName":"Deepak" ,
+
+					"feature1":{
+						"imgLink":"1.png",
+						"name"   : "chatAnim"
+					},
+
+					"feature2":{
+						"imgLink":"2.png",
+						"name"   : "newsAnim"
+					
+					},
+					"feature3":{
+						"imgLink":"3.png",
+						"name"   : "couponsAnim"
+					},
+					"feature4":{
+						"imgLink":"4.png",
+						"name"   : "Filters/Doodles",
+						"name"   : "filtersAnim"
+					},
+
+					"feature5":{
+						"imgLink":"5.png",
+						"name"   : "hkDirectAnim"
+					},
+
+					"feature6":{
+						"imgLink":"6.png",
+						"name"   : "hiddenModeAnim"
+					
+					},
+
+					"isCrossEnable": true,
+					"pid": "2432",
+					"card": {
+						"style": "background-repeat: repeat; background-size: contain;  background-color: #FFFFFF",
+						"imagelink": "background.png"
+					},
+					"crossImage": {
+						"imagelink": "cross.png",
+						"link": "{'screen':'cancel'}",
+						"action": "openappscreen",
+						"style": ""
+					},
+					"isActionable":false
+				},
+				"h": "369",
+				"notifTitle": "Hike is lot more than fun than simple messaging",
+				"notifText": "Hike is lot more than fun than simple  messaging",
+				"hd": {},
+				"layoutId": "index.html",
+				"user": "All",
+				"push": "loud"
+			},
+			"isFullScreen": true,
+			"triggerpoint": 0,
+			"endTime": 142607971000021234,
+			"starttime": 1426079410000,
+			"pushTime": 1426079410000,
+			"isCancellable": true,
+			"config": 1
+		}
+	}
+}
